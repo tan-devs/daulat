@@ -1,0 +1,33 @@
+node_modules
+
+# AI Tools & Agents
+.agents/
+.claude/
+.gemini/
+.windsurf/
+
+# IDEs & Tools
+.vscode/
+.svelte-kit/
+/build
+src/convex/_generated/
+
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.*
+!.env.example
+!.env.test
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
