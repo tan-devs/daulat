@@ -23,7 +23,6 @@
 }
 
 body {
-	height: 100%;
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
 }
@@ -182,6 +181,8 @@ h6 {
 	--radius-2xl: calc(var(--radius) * 1.8);
 	--radius-3xl: calc(var(--radius) * 2.2);
 	--radius-4xl: calc(var(--radius) * 2.6);
+	--radius-8xl: calc(var(--radius) * 3.0);
+	--radius-16xl: calc(var(--radius) * 3.4);
 }
 
 @layer base {
@@ -190,10 +191,10 @@ h6 {
 	}
 
 	body {
-		@apply bg-background text-foreground;
+		@apply bg-background text-foreground h-full;
 	}
 
 	html {
-		@apply font-sans;
+		@apply font-mono;
 	}
 }
