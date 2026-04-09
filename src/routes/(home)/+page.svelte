@@ -3,45 +3,10 @@
 	import Button from '$components/ui/button/button.svelte';
 	import { Accordion } from 'bits-ui';
 
-	const faqs = [
-		{
-			id: 'item-1',
-			question: 'Is my crypto safe with this wallet?',
-			answer:
-				'Your funds are protected by industry-standard encryption and non-custodial key management — only you hold your private keys.'
-		},
-		{
-			id: 'item-2',
-			question: 'Which cryptocurrencies are supported?',
-			answer:
-				'We support Bitcoin (BTC), Ethereum (ETH), Binance Smart Chain (BSC), and many smaller altcoins such as Litecoin (LTC), Ripple (XRP), and Cardano (ADA), along with hundreds of ERC-20 and BEP-20 tokens.'
-		},
-		{
-			id: 'item-3',
-			question: 'How can I restore my wallet?',
-			answer:
-				'Use your 12 or 24-word seed phrase in the restore flow. Never share your seed phrase with anyone.'
-		},
-		{
-			id: 'item-4',
-			question: 'How long do transactions take?',
-			answer:
-				'Transaction times vary by network. Bitcoin typically takes 10–60 minutes; Ethereum is usually under 2 minutes at standard gas.'
-		},
-		{
-			id: 'item-5',
-			question: 'Are there any fees for using the wallet?',
-			answer:
-				'The wallet itself is free. You only pay standard network gas fees when sending transactions — we take no additional cut.'
-		},
-		{
-			id: 'item-6',
-			question: 'Can I use this wallet for NFTs?',
-			answer:
-				'Yes — the wallet supports ERC-721 and ERC-1155 tokens. You can view, send, and receive NFTs directly from the app.'
-		}
-	];
+	import faqs from '$lib/assets/faqs.json';
 </script>
+
+<!--html-->
 
 <section class="grid grid-cols-2 p-16 pt-2 relative justify-between gap-16">
 	<article class="rounded-16xl bg-card p-10 relative overflow-hidden flex flex-col h-full gap-12">
@@ -214,7 +179,7 @@
 						</div>
 					</Accordion.Trigger>
 				</Accordion.Header>
-				<Accordion.Content class="pb-4 px-63 text-sm leading-relaxed text-muted-foreground">
+				<Accordion.Content class="py-4 pb-16 px-63 text-sm leading-relaxed text-muted-foreground">
 					{faq.answer}
 				</Accordion.Content>
 			</Accordion.Item>

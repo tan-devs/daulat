@@ -4,7 +4,11 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
-		"dev": "vite dev",
+		"clense": "pnpm format && pnpm lint && pnpm check",
+		"dev:client": "vite dev --host",
+		"dev:frontend": "vite dev --host 127.0.0.1 --port 5173",
+		"dev:server": "pnpm dlx convex dev",
+		"dev": "concurrently --kill-others --prefix-colors red,yellow --names \"svelte,convex\" \"pnpm dev:client\" \"pnpm dev:server\"",
 		"build": "vite build",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
