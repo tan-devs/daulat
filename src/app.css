@@ -4,6 +4,8 @@
 @import '@fontsource-variable/inter';
 @import '@fontsource-variable/martian-mono';
 
+@plugin "@toolwind/corner-shape";
+
 @custom-variant dark (&:is(.dark *));
 
 *,
@@ -181,7 +183,7 @@ h6 {
 	--radius-2xl: calc(var(--radius) * 1.8);
 	--radius-3xl: calc(var(--radius) * 2.2);
 	--radius-4xl: calc(var(--radius) * 2.6);
-	--radius-8xl: calc(var(--radius) * 3.0);
+	--radius-8xl: calc(var(--radius) * 3);
 	--radius-16xl: calc(var(--radius) * 3.4);
 }
 
@@ -197,4 +199,21 @@ h6 {
 	html {
 		@apply font-mono;
 	}
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--border);
+	border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--muted-foreground);
 }
