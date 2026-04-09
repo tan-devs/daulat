@@ -14,6 +14,14 @@
 <Button aria-label="get started" class="w-64 h-12 px-2">Get Started ↗</Button>
 
 <div class="flex items-center gap-8">
-	<Button aria-label="app store" variant="outline">App Store</Button>
-	<Button aria-label="google play " variant="outline">Google Play</Button>
+	<Button
+		aria-label="app store"
+		variant="outline"
+		href="https://apps.apple.com/in/app/apple-store/"
+	>
+		App Store
+	</Button>
+	<Button aria-label="google play " variant="outline" href="https://play.google.com/store/"
+		>Google Play</Button
+	>
 </div>

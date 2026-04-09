@@ -86,6 +86,7 @@ h6 {
 	--secondary-foreground: oklch(0.13 0.01 345);
 	--muted: oklch(0.93 0.01 108);
 	--muted-foreground: oklch(0.42 0.01 345);
+	--muted-background: oklch(0.82 0 0);
 	--accent: oklch(0.93 0.21 108);
 	--accent-foreground: oklch(0.13 0.01 345);
 	--destructive: oklch(0.577 0.245 27.325);
@@ -121,6 +122,7 @@ h6 {
 	--secondary-foreground: oklch(0.96 0 0);
 	--muted: oklch(0.22 0.01 345);
 	--muted-foreground: oklch(0.65 0.01 345);
+	--muted-background: oklch(0.13 0.01 345);
 	--accent: oklch(0.93 0.21 108);
 	--accent-foreground: oklch(0.13 0.01 345);
 	--destructive: oklch(0.704 0.191 22.216);
@@ -165,6 +167,7 @@ h6 {
 	--color-accent-foreground: var(--accent-foreground);
 	--color-accent: var(--accent);
 	--color-muted-foreground: var(--muted-foreground);
+	--color-muted-background: var(--muted-background);
 	--color-muted: var(--muted);
 	--color-secondary-foreground: var(--secondary-foreground);
 	--color-secondary: var(--secondary);

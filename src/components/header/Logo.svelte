@@ -4,6 +4,6 @@
 	let { src } = $props();
 </script>
 
-<Button variant="link" class="text-foreground" href="https://github.com/tan-devs/daulat">
+<Button variant="link" class="text-foreground outline-0" href="https://github.com/tan-devs/daulat">
 	<img {src} alt="logo" class="w-12 h-12" /><span class="text-2xl">Daulat</span>
 </Button>
