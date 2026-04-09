@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { Navmenu, Logo } from '$components/header';
-
 	import { Button } from '$components/ui/button';
 
 	import favicon from '$lib/assets/favicon.svg';
@@ -15,7 +14,7 @@
 
 <!--html-->
 
-<header class="sticky top-0 z-50 flex items-center justify-between text-card-foreground px-16">
+<header class="sticky top-0 z-50 flex items-center justify-between text-card-foreground px-2 py-2">
 	<!--left-->
 	<div id="logo" class="flex items-center gap-2 backdrop-blur-sm rounded-4xl px-2 h-full">
 		<Logo src={favicon} />
@@ -27,7 +26,10 @@
 
 	<!--right-->
 	<div id="link" class="flex items-center gap-2 h-full">
-		<Button class="bg-foreground text-background text-sm font-medium hover:text-foreground">
+		<Button
+			href="./auth"
+			class="bg-foreground text-background text-sm font-medium hover:text-foreground"
+		>
 			Download App
 		</Button>
 	</div>

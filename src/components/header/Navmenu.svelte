@@ -1,5 +1,15 @@
+<script lang="ts">
+	import { Button } from '$components/ui/button';
+</script>
+
 <menu class="flex gap-8 items-center justify-center h-full">
-	<li class="flex items-center justify-center">About us</li>
-	<li class="flex items-center justify-center">Reviews</li>
-	<li class="flex items-center justify-center">Blog</li>
+	<li class="flex items-center justify-center">
+		<Button variant="ghost" href="/">About us</Button>
+	</li>
+	<li class="flex items-center justify-center">
+		<Button variant="ghost" href="/shop">Reviews</Button>
+	</li>
+	<li class="flex items-center justify-center">
+		<Button variant="ghost" href="/api">Blog</Button>
+	</li>
 </menu>
