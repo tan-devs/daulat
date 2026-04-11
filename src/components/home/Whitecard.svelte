@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Button } from '$components/ui/button';
+	import { Button } from '../ui/button';
 </script>
 
 <div class="flex flex-col gap-6">

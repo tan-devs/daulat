@@ -1,6 +1,6 @@
 <script>
-	import { Learnmore, Yellowcard, Whitecard } from '$components/home';
-	import Button from '$components/ui/button/button.svelte';
+	import { Learnmore, Yellowcard, Whitecard } from '../components/home';
+	import { Button } from '../components/ui/button';
 	import { Accordion } from 'bits-ui';
 
 	import faqs from '$lib/assets/faqs.json';

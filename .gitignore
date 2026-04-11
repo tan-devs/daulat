@@ -1,22 +1,12 @@
 node_modules
 
-# AI Tools & Agents
-.agents/
-.claude/
-.gemini/
-.windsurf/
-
-# IDEs & Tools
-.vscode/
-.svelte-kit/
-/build
-src/convex/_generated/
-
 # Output
 .output
 .vercel
 .netlify
 .wrangler
+/.svelte-kit
+/build
 
 # OS
 .DS_Store
