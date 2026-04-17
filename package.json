@@ -49,6 +49,9 @@
 	},
 	"dependencies": {
 		"@fontsource-variable/martian-mono": "^5.2.7",
-		"@toolwind/corner-shape": "0.0.8-3"
+		"@toolwind/corner-shape": "0.0.8-3",
+		"concurrently": "^9.2.1",
+		"convex": "^1.35.1",
+		"svelte-clerk": "^1.1.3"
 	}
 }
