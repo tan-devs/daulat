@@ -4,10 +4,10 @@
 
 <menu class="flex gap-8 items-center justify-center h-full">
 	<li class="flex items-center justify-center">
-		<Button variant="ghost" href="/">About us</Button>
+		<Button variant="ghost" href="/">Home</Button>
 	</li>
 	<li class="flex items-center justify-center">
-		<Button variant="ghost" href="/shop">Reviews</Button>
+		<Button variant="ghost" href="/dash">Dashboard</Button>
 	</li>
 	<li class="flex items-center justify-center">
 		<Button variant="ghost" href="/api">Blog</Button>
@@ -15,5 +15,4 @@
 	<li class="flex items-center justify-center">
 		<Button variant="ghost" href="/demo">Demo</Button>
 	</li>
-
 </menu>

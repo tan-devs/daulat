@@ -2,11 +2,39 @@
 	import { Learnmore, Yellowcard, Whitecard } from '$components/home';
 	import Button from '$components/ui/button/button.svelte';
 	import { Accordion } from 'bits-ui';
+	import favicon from '$lib/assets/favicon.svg';
+
+	import { Navmenu, Logo, ModeToggle } from '$components/header';
+	import { Show, SignInButton, UserButton } from 'svelte-clerk';
 
 	import faqs from '$lib/assets/faqs.json';
 </script>
 
 <!--html-->
+
+<header class="sticky top-0 z-50 flex items-center justify-between text-card-foreground px-2 py-2">
+	<!--left-->
+	<div id="logo" class="flex items-center gap-2 backdrop-blur-sm rounded-4xl px-2 h-full">
+		<Logo src={favicon} />
+	</div>
+	<!--center-->
+	<nav class="absolute left-1/2 -translate-x-1/2 backdrop-blur-sm rounded-4xl px-2 h-full">
+		<Navmenu />
+	</nav>
+
+	<!--right-->
+	<div id="link" class="flex items-center gap-2 h-full">
+		<Show when="signed-out">
+			<SignInButton
+				class="hover:bg-primary/80 bg-foreground text-background text-sm font-medium hover:text-foreground h-9 gap-1.5 px-2.5 in-data-[slot=button-group]:rounded-md has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2"
+			/>
+		</Show>
+		<Show when="signed-in">
+			<UserButton />
+		</Show>
+		<ModeToggle />
+	</div>
+</header>
 
 <section class="grid grid-cols-2 p-16 pt-2 relative justify-between gap-16">
 	<article class="rounded-16xl bg-card p-10 relative overflow-hidden flex flex-col h-full gap-12">

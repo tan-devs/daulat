@@ -11,7 +11,7 @@
 	failed to load: {query.error.toString()}
 {:else}
 	<ul>
-		{#each query.data as task}
+		{#each query.data as task (task)}
 			<li>
 				{task.isCompleted ? '☑' : '☐'}
 				<span>{task.text}</span>
