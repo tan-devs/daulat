@@ -12,4 +12,8 @@
 	<li class="flex items-center justify-center">
 		<Button variant="ghost" href="/api">Blog</Button>
 	</li>
+	<li class="flex items-center justify-center">
+		<Button variant="ghost" href="/demo">Demo</Button>
+	</li>
+
 </menu>
