@@ -1,29 +1,13 @@
 <script>
-	import * as Breadcrumb from '$components/ui/breadcrumb/index.js';
-	import { Separator } from '$components/ui/separator/index.js';
 	import * as Sidebar from '$components/ui/sidebar/index.js';
-	import { AppSidebar } from '$components/dash/sidebar';
+	import { AppSidebar, Titlebar } from '$components/dash';
 </script>
 
 <Sidebar.Provider>
 	<AppSidebar />
 	<Sidebar.Inset>
-		<header class="flex h-16 shrink-0 items-center gap-2 border-b px-4">
-			<Sidebar.Trigger class="-ms-1" />
-			<Separator orientation="vertical" class="me-2 h-4" />
-			<Breadcrumb.Root>
-				<Breadcrumb.List>
-					<Breadcrumb.Item class="hidden md:block">
-						<Breadcrumb.Link href="##">Build Your Application</Breadcrumb.Link>
-					</Breadcrumb.Item>
-					<Breadcrumb.Separator class="hidden md:block" />
-					<Breadcrumb.Item>
-						<Breadcrumb.Page>Data Fetching</Breadcrumb.Page>
-					</Breadcrumb.Item>
-				</Breadcrumb.List>
-			</Breadcrumb.Root>
-		</header>
-		<div class="flex flex-1 flex-col gap-4 p-4">
+		<Titlebar />
+		<div class="flex flex-1 flex-col gap-4 p-4 pt-0">
 			<div class="grid auto-rows-min gap-4 md:grid-cols-3">
 				<div class="bg-muted/50 aspect-video rounded-xl"></div>
 				<div class="bg-muted/50 aspect-video rounded-xl"></div>
