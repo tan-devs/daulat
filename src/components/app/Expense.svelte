@@ -54,11 +54,13 @@
 		<div class="mt-5 flex items-center gap-3 pt-4 border-t border-border">
 			<span class="text-sm font-medium text-muted-foreground">Filtered total:</span>
 			<span
-				class="inline-flex items-center rounded-lg border border-primary/30 bg-primary/10 px-3 py-1 text-sm font-semibold text-foreground"
+				class="inline-flex items-center rounded-lg border border-ring bg-accent px-3 py-1 text-sm font-semibold text-accent-foreground"
 			>
 				$0.00
 			</span>
-			<div class="ml-auto text-xs text-primary hover:underline underline-offset-2 transition">
+			<div
+				class="ml-auto text-xs text-accent-foreground hover:underline underline-offset-2 transition"
+			>
 				Export CSV →
 			</div>
 		</div>

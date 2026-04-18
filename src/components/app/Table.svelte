@@ -35,7 +35,10 @@
 					</td>
 				</tr>
 				<tr class="border-t border-border">
-					<td colspan="5" class="px-5 py-10 text-center text-muted-foreground text-sm">
+					<td
+						colspan="5"
+						class="px-5 py-10 text-center text-muted-foreground text-sm bg-muted-background/60"
+					>
 						<div class="flex flex-col items-center gap-2">
 							<span class="text-2xl">🧾</span>
 							<span>No expenses yet — add your first one above.</span>

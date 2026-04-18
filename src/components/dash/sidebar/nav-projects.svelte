@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Button } from '$components/ui/button';
-import * as DropdownMenu from '$components/ui/dropdown-menu/index.js';
+	import * as DropdownMenu from '$components/ui/dropdown-menu/index.js';
 	import * as Sidebar from '$components/ui/sidebar/index.js';
 	import { useSidebar } from '$components/ui/sidebar/index.js';
 	import EllipsisIcon from '@lucide/svelte/icons/ellipsis';
