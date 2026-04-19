@@ -37,6 +37,9 @@ export default defineConfig(
 		}
 	},
 	{
+		ignores: ['src/convex/functions/_generated/**']
+	},
+	{
 		// Override or add rule settings here, such as:
 		// 'svelte/button-has-type': 'error'
 		rules: {}
